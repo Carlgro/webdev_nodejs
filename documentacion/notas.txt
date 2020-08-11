@@ -1,0 +1,31 @@
+Crear el proyecto: 
+    1) npm init 
+    Te dará advertencias a men os que tengas le des la URL de un repo; 
+
+----
+Instalar Express: 
+    (sudo) npm install --save express
+
+----
+use port 3000 unless there exists a preconfigured port
+In many environments (e.g. Heroku), and as a convention, 
+you can set the environment variable PORT to tell your web server what port to listen on.
+
+    app.set('port', process.env.PORT || 3000);
+
+----
+I highly recommend getting a browser plugin that shows you the
+status code of the HTTP request as well as any redirects that took
+place. It will make it easier to spot redirect issues in your code, or
+incorrect status codes, which are often overlooked. 
+For Chrome, Ayi‐ma’s Redirect Path works wonderfully
+
+----
+“model-view-controller” paradigm
+
+----
+Después de usar el motor de vista ("view engine") no tenemos que especificar el tipo de contenido ni estado 200
+el motor de vista se encarga de especificar esos parámetros;
+
+----
+Middleware provides modularization, making it easier to handle requests.
